@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефоны</title>
+</head>
+<body>
+<h1>Телефонный справочник</h1>
+<table style="font-size: 25px;">
+    <tr>
+        <td style="width: 360px">Имя:</td>
+        <td style="width: 300px">Адрес:</td>
+        <td style="width: 310px">Дата регистрации:</td>
+        <td>Телефон:</td>
+    </tr>
+    {% for i in table_phone %}
+        <tr>
+            <td>{{ i.Name }}</td>
+            <td>{{ i.Address }}</td>
+            <td>{{ i.RegDate }}</td>
+            <td>{{ i.Phone }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
